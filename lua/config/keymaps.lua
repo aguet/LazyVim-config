@@ -24,3 +24,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Yank into system clip
 vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Yank line into system clipboard" })
 
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]], { desc = "delete line into void" })
+
+-- Terminal escape
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("t", "<Esc><Esc>", "<Esc>")
